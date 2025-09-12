@@ -7,13 +7,12 @@ int a, b, c;
 int main()
 {
     cin >> a >> b >> c;
-    if (a % 4 == 0)
+    if ((a + b > c) && (a + c > b) && (b + c > a))
     {
-        cout << "YES";
+        cout << "Yes";
     }
-    else
-    {
-        cout << "NO";
+    else{
+        cout << "No";
     }
     return 0;
 }

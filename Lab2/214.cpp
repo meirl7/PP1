@@ -7,13 +7,13 @@ int a, b, c;
 int main()
 {
     cin >> a >> b >> c;
-    if (a % 4 == 0)
+    if ((a + b + c >= 70) && (a + b >= 30) && c>=20)
     {
-        cout << "YES";
+        cout << "YES!";
     }
     else
     {
-        cout << "NO";
+        cout << "NO.";
     }
     return 0;
 }

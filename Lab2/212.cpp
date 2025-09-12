@@ -2,17 +2,16 @@
 
 using namespace std;
 
-int a, b, c;
+int a, b;
 
 int main()
 {
-    cin >> a >> b >> c;
-    if (a % 4 == 0)
+    cin >> a >> b;
+    if (b > 0.8 * a)
     {
         cout << "YES";
     }
-    else
-    {
+    else{
         cout << "NO";
     }
     return 0;
