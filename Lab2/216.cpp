@@ -6,14 +6,17 @@ int n;
 
 int main()
 {
-    int long long sum = 0;
+    int cnt = 0;
     cin >> n;
     for (int i = 0; i < n; i++)
     {
         int long long a;
         cin >> a;
-        sum += a;
+        if (a > 0)
+        {
+            cnt++;
+        }
     }
-    cout << sum;
+    cout << cnt;
     return 0;
 }

@@ -6,14 +6,18 @@ int n;
 
 int main()
 {
-    int long long sum = 0;
+    int max;
     cin >> n;
-    for (int i = 0; i < n; i++)
+    cin >> max;
+    for (int i = 0; i < n - 1; i++)
     {
         int long long a;
         cin >> a;
-        sum += a;
+        if (a > max)
+        {
+            max = a;
+        }
     }
-    cout << sum;
+    cout << max;
     return 0;
 }

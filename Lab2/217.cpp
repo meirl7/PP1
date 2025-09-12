@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -6,14 +7,15 @@ int n;
 
 int main()
 {
-    int long long sum = 0;
     cin >> n;
     for (int i = 0; i < n; i++)
     {
-        int long long a;
-        cin >> a;
-        sum += a;
+        if (pow(2, i) == n)
+        {
+            cout << "YES";
+            return 0;
+        }
     }
-    cout << sum;
+    cout << "NO";
     return 0;
 }
