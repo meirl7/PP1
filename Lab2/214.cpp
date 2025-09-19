@@ -2,18 +2,16 @@
 
 using namespace std;
 
-int a, b, c;
+int a;
 
 int main()
 {
-    cin >> a >> b >> c;
-    if ((a + b + c >= 70) && (a + b >= 30) && c>=20)
+    int sum;
+    cin >> a;
+    for (int i = 1; i <= a; i++)
     {
-        cout << "YES!";
+        sum += i;
     }
-    else
-    {
-        cout << "NO.";
-    }
+    cout << sum;
     return 0;
 }
