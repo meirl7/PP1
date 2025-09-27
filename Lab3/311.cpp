@@ -6,6 +6,12 @@ int main()
 {
     int n;
     cin >> n;
-    n == (~(n - 1) & n) ? cout << "YES" : cout << "NO";
-    return 0;
+    if ((n & (n - 1)) == 0)
+    {
+        cout << "YES";
+    }
+    else
+    {
+        cout << "NO";
+    }
 }

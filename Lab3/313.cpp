@@ -1,29 +1,22 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-    int n;
-    cin >> n;
+    string s;
+    cin >> s;
 
-    int n1 = 0, n2 = 0;
-    int i = 0;
-    while (n != 0)
+    int odd_sum = 0, even_sum = 0;
+
+    for (int i = 0; i < s.size(); i++)
     {
-        if (i % 2 == 0)
-        {
-            n1 += n % 10;
-        }
-        else
-        {
-            n2 += n % 10;
-            
-        }
-        n /= 10;
-        
-        i++;
+        int digit = s[i] - '0';
+
+        (i + 1) % 2 == 1 ? odd_sum += digit : even_sum += digit;
     }
-    n1 == n2 ? cout << "YES" : cout << "NO";
+    odd_sum == even_sum ? cout << "YES" : cout << "NO";
+
     return 0;
 }
